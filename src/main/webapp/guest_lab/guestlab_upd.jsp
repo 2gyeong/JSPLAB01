@@ -24,8 +24,6 @@ String p = request.getParameter("page");
 			out.println("해당 내용이 DB에 없음");
 		}else{
 			
-
-
 %>
 
 <html>
@@ -128,12 +126,12 @@ function check() {
 	  <tr> 
 	   <td colspan="2" align="right"> 
 	    <table width="100%" border="0" cellpadding="0" cellspacing="0">
-	     <tr> 
-	      <td width="64%">&nbsp;</td>
-	      <td width="12%"><a href="#" onClick="check();"><img src="images/ok.gif" border="0"></a></td>
-	      <td width="12%"><a href="#" onClick="history.go(-1)"><img src="images/cancle.gif"  border="0"></td>
-	      <td width="12%"><A href="guestlab_list.jsp?go=<%= request.getParameter("page") %>"> <img src="images/list.jpg" border=0></a></td>
-	     </tr>			
+     <tr> 
+      <td width="64%">&nbsp;</td>
+      <td width="12%"><a href="#" onClick="check();"><img src="image/ok.gif" border="0"></a></td>
+      <td width="12%"><a href="#" onClick="history.go(-1)"><img src="image/cancle.gif"  border="0"></td>
+      <td width="12%"><A href="freeboard_list03.jsp?go=<%= request.getParameter("page")%>"> <img src="image/list.jpg" border=0></a></td>
+     </tr>	
 	    </table>
 	   </td>
 	  </tr>
