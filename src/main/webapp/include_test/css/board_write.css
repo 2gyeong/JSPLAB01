@@ -1,0 +1,299 @@
+* {margin: 0; padding: 0;}
+body {
+   /* border: 1px solid red; */
+   font-size: 12px;
+}
+div {
+   /* border: 1px solid rgb(255, 255, 255); */
+}
+.outdiv {
+   /* border: 1px solid red; */
+   width: 980px;
+   margin: 0 auto;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+#i_ul2 a {
+   color: white;
+}
+
+
+ul {
+   list-style-type: none;
+}
+.clear {
+   clear: both;
+}
+table {
+   /* border: 1px solid blue; */
+}
+header {
+   /* border: 1px solid red; */
+   width: 100%; height: 100px;
+}
+aside {
+   /* border: 1px solid red; */
+   width: 200px; height: 800px;
+   float: left;
+}
+main {
+   /* border: 1px solid red; */
+   width: 100%-200px; height: 800px;
+   margin-left: 200px;
+}
+footer {
+   /* border: 1px solid red; */
+   width: 100%; height: 100px;
+}
+
+#logo {
+   float: left;
+   margin: 15px 10px 10px 20px;
+}
+#i_ul1 ul{
+   /* li 순서가 반대로 나열되서 처리 */
+   float: right;
+   position: relative;
+   top: 15px; left: -35px;
+}
+#i_ul1 li {
+   display: inline;
+   position: relative;
+   top: 0px;
+   float: left;
+   margin: 0px 0 0px 5px;
+}
+
+#i_menu {
+   position: relative;
+   top: 30px; left: 25px;
+}
+
+#i_ul2 li {
+   display: inline;
+   color: white;
+   font-size: 13px;
+   margin: 0 80px 0 0px;
+   position: relative;
+   top: -5px; left: 75px;
+}
+
+/* header 끝 */
+
+/* aside 시작 */
+
+#i_a_login {
+   background-color: rgb(243, 243, 243);
+   border-radius: 10px;
+   margin: 5px 0px 5px 5px;
+   padding: 2px;
+   width: 180px; height: 110px;
+}
+#i_a_login> table {
+   
+   position: relative;
+   margin: 10px 0 0 1px;
+}
+
+
+
+#i_a_ul {
+   background-color: rgb(243, 243, 243);
+   border-radius: 10px;
+   margin: 15px 0px 5px 5px;
+   padding: 2px;
+   width: 180px; height: 110px;
+}
+
+#i_a_line {
+   width: 170px; height: 0px;
+   border-bottom: 1px solid rgb(199, 197, 197);
+   margin-left: -10px;
+   margin-bottom: 5px;
+
+}
+
+#i_a_ul ul {
+   padding: 5px 15px 10px 15px
+}
+
+
+/* com */
+#l_a_com {
+   margin: 15px 0 5px 3px;
+}
+#l_a_com ul{
+   position: relative;
+   top: -230px; left: 30px;
+}
+
+#l_a_com li {
+   margin: 0 0 15px 0;
+}
+
+#l_a_com1 {
+   position: relative;
+   margin: 0 10px 0 3px;
+   top: -150px;
+   border: 1px solid rgb(199, 197, 197);
+   border-radius: 10px;
+}
+
+
+/* aside 끝 */
+
+/* main 시작*/
+#i_m_div1 {
+   width: 755px; height: 260px;
+   position: relative;
+   top: 5px; left: 10px;
+}
+#i_m_div2 {
+   width: 377px; height: 100px;
+   position: relative;
+   top: 5px; left: 10px;
+   margin: 0px 0 20px 0;
+}
+#i_m_div3 {
+   width: 377px; height: 100px;
+   position: relative;
+   top: 5px; left: 10px;
+   
+}
+#i_m_div4 {
+   width: 377px; height: 200px;
+   position: relative;
+   float: right;
+   margin-top: 5px;
+}
+#i_m_div5 {
+   width: 755px; height: 160px;
+   position: relative;
+   top: 5px; left: 10px;
+}
+
+
+.i_m_line {
+   width: 377px; height: 0px;
+   border-bottom: 1px solid rgb(199, 197, 197);
+   position: relative;
+   top: 7px;
+
+}
+
+#i_m_div2 #i_more {
+   float: right;
+   
+}
+
+#i_m_ul1 {
+   position: relative;
+   top: -65px; left: 110px;
+}
+#i_m_ul2 {
+   position: relative;
+   top: -130px; left: 310px;
+}
+
+#i_m_div3 #i_more {
+   float: right;
+}
+
+#i_m_div4 #i_more {
+   float: right;
+   margin-right: 10px;
+}
+
+#i_m_div4 .i_m_line{
+   width: 360px;
+} 
+
+#bach {
+   margin: 10px 0 0 50px;
+}
+
+#i_m_table {
+   width: 680px; height: 160px;
+   border: 1px solid rgb(199, 197, 197);
+   border-radius: 10px;
+   padding: 15px 25px 15px 25px;
+   box-shadow: 5px 5px 5px rgb(199, 197, 197, 0.4)
+}
+
+#i_m_div5 td {
+   margin: 10px;
+   padding: 0 15px 0 15px
+}
+
+/* 자유게시판 */
+
+#outdiv_write {
+   margin: 10px;
+}
+
+#outdiv_write table {
+   /* tr사이 여백 */
+   border-spacing: 0 10px;
+}
+
+#outdiv_write tr{
+   
+}
+
+
+/* #outdiv_write th{
+   background-color: rgb(243, 243, 243);
+   border-top: 1px solid rgb(180, 180, 180);
+   border-bottom: 1px solid rgb(180, 180, 180);
+   border-left: 0px;
+   border-right: 0px;
+} */
+
+
+
+
+#w_m_table2{
+   border-collapse: collapse;
+   /* border-bottom: none ; */
+   border-left: hidden ;
+   border-right: hidden;
+   border-bottom: hidden;
+
+}
+
+
+#w_m_table2 tr{
+   /* 테이블 선이 안생김... */
+   border: 1px solid rgb(180, 180, 180);
+   margin: 10px;
+}
+#w_m_table2 td{
+   /* 테이블 선이 안생김... */
+   border: 1px solid rgb(180, 180, 180)
+}
+
+.th1 {
+   background-color: rgb(243, 243, 243);
+   border-top: 1px solid rgb(180, 180, 180);
+   border-bottom: 1px solid rgb(180, 180, 180);
+   border-left: none;
+   border-right: none;
+
+}
+
+
+/* footer 시작 */
+
+#i_f_table table{
+   width: 980px;
+}
+
+#i_f_line {
+   width: 940px; height: 0px;
+   border-bottom: 1px solid rgb(199, 197, 197);
+
+}
