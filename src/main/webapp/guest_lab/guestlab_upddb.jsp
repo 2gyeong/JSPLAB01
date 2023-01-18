@@ -6,7 +6,7 @@
 <% request.setCharacterEncoding("UTF-8");%>
 
 <%
-int id = Integer.parseInt(request.getParameter("id"));
+int idx = Integer.parseInt(request.getParameter("idx"));
 String p = request.getParameter("page");	
 
 
@@ -18,12 +18,10 @@ String gen = request.getParameter("gender");
 String add = request.getParameter("addr");
 String pw = request.getParameter("ename");
 
+out.println(idx + "<p/>");
+ out.println(p + "<p/>");
 
-
-// out.println(id + "<p/>");
-// out.println(p + "<p/>");
-
-// if (true) return;
+ if (true) return; 
 
 %>
 <!DOCTYPE html>
@@ -34,7 +32,7 @@ String pw = request.getParameter("ename");
 </head>
 <body>
 
-[<A href = "freeboard_list03.jsp?go=<%= p %>">게시판 목록으로</A>]
+[<A href = "guestlab_list.jsp?go=<%= p %>">게시판 목록으로</A>]
 
 <%
 	String sql = null;
@@ -44,7 +42,7 @@ String pw = request.getParameter("ename");
 	//DB에서 해당 id에 대한 password를 가져와서 폼에서 전송된 password와 확인
 	sql = "select * from guestlab where idx =?";
 	pstmt = conn.prepareStatement(sql);
-	pstmt.setInt(1, id);
+	pstmt.setInt(1, idx);
 	rs = pstmt.executeQuery();
 	
 	try{
@@ -65,13 +63,13 @@ String pw = request.getParameter("ename");
 		if(pwd.equals(pw)){
 			//update 진행
 			sql = "update guestlab set ename=?, phone=?, ";
-			sql += "gender=?, addr=? where idx =?";
+			sql += "gender=?, addr=? where idx=?";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, en); 
 			pstmt.setString(2, ph);
 			pstmt.setString(3, gen);
 			pstmt.setString(4, add);
-			pstmt.setInt(5, id);
+			pstmt.setInt(5, idx);
 			
 			pstmt.executeUpdate();
 			

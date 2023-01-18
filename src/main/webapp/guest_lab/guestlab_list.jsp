@@ -1,12 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
 <%@ page import="java.sql.*,java.util.*" %>
-
 <% request.setCharacterEncoding("UTF-8"); %>
-
 <%@ include file="conn_oracle.jsp" %>
-
 
 <!DOCTYPE html>
 <html>
@@ -52,7 +48,7 @@
    <td width="340" bgcolor="#DFEDFF"><font size="2">이메일</font></td>
    <td width="84" bgcolor="#DFEDFF"><font size="2">전화번호</font></td>
    <td width="78" bgcolor="#DFEDFF"><font size="2">성별</font></td>
-   <td width="49" bgcolor="#DFEDFF"><font size="2">주소</font></td>
+   <td width="100" bgcolor="#DFEDFF"><font size="2">주소</font></td>
   </tr>
   <tr align="center"> 
    <td colspan="5" bgcolor="#1F4F8F" height="1"></td>
@@ -148,9 +144,8 @@
   %>
 
   <tr>
- 		<!-- c-17. 벡터의 j방의 값을 가져옴 -->
+
  		<td> <%= idx.elementAt(j) %></td>
-						<!-- c-18. id값을 던져준다,,,?  -->
  	
  		<td><a href="guestlab_read.jsp?id=<%= idx.elementAt(j) %>&page=<%= where %>"><%= ename.elementAt(j) %></a></td>
  		<td><%= phone.elementAt(j) %></td>
@@ -196,7 +191,7 @@
  		out.println("[끝]");
  	 }
  	 
- 	 out.println("전체글수 : " + totalrows);
+ 	 out.println("전체글 수 : " + totalrows);
  	 
  	 %>
  	 
@@ -218,8 +213,8 @@
   <TD width="127" align="center">
    <INPUT type=text size="17" name="sval" >
   </TD>
-  <TD width="115">&nbsp;<a href="#" onClick="check();"><img src="image/serach.gif" border="0" align='absmiddle'></A></TD>
-  <TD align=right valign=bottom width="117"><A href="guestlab_write.jsp"><img src="image/write.gif" border="0"></A></TD>
+  <TD width="115">&nbsp;<a href="#" onClick="check();"><img src="./image/serach.gif" border="0" align='absmiddle'></A></TD>
+  <TD align=right valign=bottom width="117"><A href="guestlab_write.jsp"><img src="./image/write.gif" border="0"></A></TD>
  </TR>
 </TABLE>
 </FORM>
